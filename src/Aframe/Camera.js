@@ -49,7 +49,7 @@ function Camera() {
 
     return (
         <a-camera
-            // ref={cameraRef}
+            ref={cameraRef}
             wasd-controls="fly: true; acceleration: 20"
         ></a-camera>
     );
