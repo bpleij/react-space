@@ -1,0 +1,119 @@
+body {
+  background-color: #111;
+  color: #fff;
+  font-family: 'Roboto', sans-serif;
+  overflow: hidden;
+}
+
+label {
+  margin: 8px;
+}
+
+button {
+  background-color: #333;
+  color: #fff;
+  border: #fff;
+  padding: 12px;
+  min-width: 72px;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+button:hover {
+  background-color: #555;
+}
+
+button:disabled {
+  background-color: #333;
+  color: #666;
+  cursor: unset;
+}
+
+select, input {
+  background-color: #333;
+  color: #fff;
+  border: #fff;
+  padding: 12px;
+  border-radius: 8px;
+}
+
+.html-overlay {
+  position: absolute;
+  /* width: 100%; */
+  z-index: 1000;
+  pointer-events: none;
+}
+
+.html-overlay > * {
+  pointer-events: all;
+}
+
+.pagination-controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px;
+  background-color: #171717;
+}
+
+.star-list {
+  float: left;
+  display: flex;
+  flex-direction: column;
+  height: calc(100vh - 64px);
+  width: 256px;
+  padding: 0;
+  margin: 0;
+}
+
+.star-list-container {
+  overflow: scroll;
+  overflow-x: hidden;
+  padding: 0;
+  margin: 0;
+  background-color: #222;
+}
+
+.star-list-item {
+  list-style-type: none;
+  padding: 8px;
+  margin: 0;
+  border-bottom: 1px solid #333;
+  cursor: pointer;
+}
+.star-list-item:hover {
+  background-color: #333;
+}
+
+.star-list-name {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.filter {
+  padding-right: 12px;
+}
+
+.star-filter {
+  display: flex;
+  justify-content: left;
+  width: 100vw;
+  padding: 12px;
+  background-color: #222222;
+}
+
+.star-info {
+  float: right;
+  display: flex;
+  flex-direction: column;
+  width: 374px;
+  margin-right: 24px;
+  background-color: #171717;
+}
+
+.star-info-panel {
+  margin: 12px;
+  padding: 12px;
+  background-color: #222;
+}
